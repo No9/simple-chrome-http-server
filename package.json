@@ -1,0 +1,19 @@
+{
+  "name": "simple-chrome-http-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "background.js",
+  "dependencies": {
+    "chrome-net": "^3.0.0",
+    "http-node": "^0.0.2"
+  },
+  "devDependencies": {
+    "launch-chrome-app": "^1.0.1"
+  },
+  "scripts": {
+    "build": "browserify -r chrome-net:net -r http-node:http src/background.js -o chrome-app/server.js",
+    "start": "node start"
+  },
+  "author": "",
+  "license": "ISC"
+}
