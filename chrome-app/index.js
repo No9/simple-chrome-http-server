@@ -9775,23 +9775,23 @@ HTTPParser.prototype.BODY_SIZED = function () {
 });
 
 },{"assert":1}],44:[function(require,module,exports){
-chrome.app.runtime.onLaunched.addListener(function () { // eslint-disable-line
-  chrome.app.window.create('index.html', { // eslint-disable-line
-    'bounds': {
-      'width': 400,
-      'height': 500
-    }
-  })
-})
+//chrome.app.runtime.onLaunched.addListener(function () { // eslint-disable-line
+//  chrome.app.window.create('index.html', { // eslint-disable-line
+//    'bounds': {
+//      'width': 400,
+//      'height': 500
+//    }
+//  })
+//})
 
-//var http = require('http');
-//http.createServer(function (req, res) {
-//  res.writeHead(200, {'Content-Type': 'text/plain'});
-//  res.end('Hello World\n');
-//}).listen(1337, '127.0.0.1');
-//console.log('Server running at http://127.0.0.1:1337/');
+var http = require('http');
+http.createServer(function (req, res) {
+  res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.end('Hello World\n');
+}).listen(1337, '127.0.0.1');
+console.log('Server running at http://127.0.0.1:1337/');
 
-},{}],"http":[function(require,module,exports){
+},{"http":"http"}],"http":[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
